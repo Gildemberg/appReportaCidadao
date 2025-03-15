@@ -20,35 +20,62 @@ const style = StyleSheet.create({
     },
     titulo: {
         color: '#000',
-        fontSize: 25,
+        fontSize: 30,
         fontWeight: 'bold',
+        marginBottom: -10
     },
     titulo2: {
         color: '#000',
-        fontSize: 15,
+        fontSize: 30,
+        fontWeight: 'bold'
+    },
+    titulo3: {
+        color: '#000',
+        fontSize: 13,
         fontWeight: 'bold',
         borderTopWidth: 1,
         textAlign: 'center'
     },
+
     card:{
         flex:2,
         borderRadius: 30,
         alignItems: 'center',
         padding: 40,
     },
+    headCard: {
+        flex:1,
+        alignItems: 'center'
+    },
     tituloCard1:{
         color: '#fff',
         fontWeight: 'bold',
-        fontSize: 30
+        fontSize: 30,
+        marginBottom: -10
     },
     tituloCard2:{
         color: '#fff',
         fontSize: 30,
     },
+    bodyCard: {
+        flex: 4, 
+        justifyContent: 'center',
+    },
     textoCard:{
         color: '#fff',
         textAlign: 'justify',
-        fontSize: 17
+        fontSize: 17,
+    },
+    texto2Card:{
+        color: '#fff',
+        textAlign: 'center',
+        fontSize: 14,
+        marginTop: 30
+    },
+    bottomCard:{
+        flex:1, 
+        flexDirection: 'row',
+        alignItems: 'center'
     },
     btn:{
         backgroundColor: '#fff',
