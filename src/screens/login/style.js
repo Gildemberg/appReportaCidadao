@@ -3,11 +3,19 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
         paddingTop: 50,
         paddingBottom: 50,
         paddingLeft: 20,
-        paddingRight: 20,
+        paddingRight: 20
+    },
+    containerTeclado: {
+        flex: 1,
+    },
+    scroll: {
+        flex: 1, 
+    },
+    scrollContent: {
+        flexGrow: 1, 
     },
     head:{
         flex: 2,
@@ -25,12 +33,10 @@ const style = StyleSheet.create({
     },
 
     card: {
-        flex: 3,
+        flex: 2,
         backgroundColor: '#fff',
         padding: 40,
         borderRadius: 30,
-        shadowColor: '#000',
-        elevation: 20,
     },
     headCard: {
         flex: 1,
@@ -51,9 +57,10 @@ const style = StyleSheet.create({
         alignSelf: 'stretch',
         borderBottomWidth: 1,
         borderColor: '#AAA',
-        textAlign: 'center',
+        textAlign: 'left',
         marginBottom: 20,
-        marginTop: -10
+        marginTop: -5,
+        paddingBottom:-5
     },
     bottomCard: {
         flex:1
@@ -69,7 +76,7 @@ const style = StyleSheet.create({
         fontWeight: '800',
     },
     bottom: {
-        flex: 1,
+        flex: 2,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center'
