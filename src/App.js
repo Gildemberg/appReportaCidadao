@@ -1,11 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+
 import Boasvindas from './screens/boasvindas';
+import Login from './screens/login';
 
 function App() {
 
   return (
-    <Boasvindas/>
+    <Login/>
   );
 }
 
