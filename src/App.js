@@ -10,11 +10,12 @@ import MinhaConta from './screens/minhaConta';
 import Categoria from './screens/categoria';
 import Localizacao from  './screens/localizacao'
 import Informacoes from  './screens/informacoes'
+import Resumo from  './screens/resumo'
 
 function App() {
 
   return (
-    <Informacoes/>
+    <Resumo/>
   );
 }
 
