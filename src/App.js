@@ -7,12 +7,12 @@ import MenuInicial from './screens/menuInicial';
 import Ouvidoria from './screens/ouvidoria';
 import CaixaDeEntrada from './screens/caixaDeEntrada';
 import MinhaConta from './screens/minhaConta';
-import CorpoDois from './components/corpoDois';
+import Categoria from './screens/categoria';
 
 function App() {
 
   return (
-    <CorpoDois/>
+    <Categoria/>
   );
 }
 
