@@ -6,11 +6,12 @@ import CadastrarConta from './screens/cadastrarConta';
 import MenuInicial from './screens/menuInicial';
 import Ouvidoria from './screens/ouvidoria';
 import CaixaDeEntrada from './screens/caixaDeEntrada';
+import MinhaConta from './screens/minhaConta';
 
 function App() {
 
   return (
-    <CaixaDeEntrada/>
+    <MinhaConta/>
   );
 }
 

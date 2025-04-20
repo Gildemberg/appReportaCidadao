@@ -3,7 +3,8 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     titulo:{
         fontSize: 40,
-        flex: 1
+        flex: 1,
+        alignSelf: 'center'
     },
     body:{
         flex: 5

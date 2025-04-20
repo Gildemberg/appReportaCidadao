@@ -3,12 +3,11 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     titulo:{
         fontSize: 40,
-        flex: 1
+        flex: 1,
+        alignSelf: 'center'
     },
     card: {
-        flex: 3,
-        width: 370,
-        height: 300,
+        flex: 4,
         borderRadius: 40,
         justifyContent: 'center',
         alignItems: 'center'
@@ -19,7 +18,7 @@ const style = StyleSheet.create({
         padding: 10
     },
     bottom:{
-        flex: 1
+        flex: 2
     }
 })
 export default style;

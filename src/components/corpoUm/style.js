@@ -1,6 +1,12 @@
 import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
+    containerTeclado: {
+        flex: 1,
+    },
+    scrollContent: {
+        flex: 1, 
+    },
     container:{
         flex: 1
     },
@@ -30,7 +36,6 @@ const style = StyleSheet.create({
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
         justifyContent: 'center',
-        alignItems: 'center'
     }
 })
 export default style;

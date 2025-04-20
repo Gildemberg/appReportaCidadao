@@ -5,16 +5,18 @@ import css from './style';
 
 export default props => {
     return (
+        <ScrollView style={css.scroll} 
+                    contentContainerStyle={css.scrollContent} 
+                    showsVerticalScrollIndicator={false}>
         <LinearGradient colors={['rgba(0, 81, 203, 0.84)', 'rgba(1, 160, 80, 0.7)','#rgba(1, 117, 146, 0.91)']}
                         start={{ x: 0, y: 0 }} 
                         end={{ x: 1, y: 1 }}
                         style={css.container}
         >
-            <KeyboardAvoidingView
+            {/* <KeyboardAvoidingView 
                 style={css.containerTeclado}
                 behavior={Platform.OS === 'ios' ? 'padding' : 'height'} 
-            >
-                <ScrollView style={css.scroll} contentContainerStyle={css.scrollContent} showsVerticalScrollIndicator={false}>
+            >*/}
                     <View style={css.head}>
                         <Image source={require('./../../assets/img/logo_prefeitura.png')} style={css.logo}/>
                         <Text style={css.titulo}>ReportaCidadão</Text>
@@ -53,8 +55,8 @@ export default props => {
                         <Text style={css.labelBtnEntrar}>Já possui conta?  </Text>
                         <TouchableOpacity style={css.btnEntrar}><Text style={css.txtBtnEntrar}>Realize login aqui.</Text></TouchableOpacity>
                     </View>
-                </ScrollView>
-            </KeyboardAvoidingView>
+            {/* </KeyboardAvoidingView>*/}
         </LinearGradient>
+                </ScrollView>
     )
 }
