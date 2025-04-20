@@ -6,7 +6,7 @@ import Card from './../../components/cardCategoria'
 
 export default props => {
     return (
-        <Corpo>
+        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'}>
             <Text style={css.titulo}>Categoria</Text>
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>

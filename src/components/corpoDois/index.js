@@ -3,7 +3,7 @@ import { View, Text, Image, ScrollView, KeyboardAvoidingView } from "react-nativ
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
-export default ({ children })  => {
+export default ({ children, titulo })  => {
     return (
         <KeyboardAvoidingView
             style={css.containerTeclado}
@@ -19,7 +19,7 @@ export default ({ children })  => {
                     <View style={css.head}>
                     <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
                         <Image source={require('./../../assets/img/logo_prefeitura.png')} style={css.logo}/>   
-                        <Text style={css.titulo}>SOLICITAÇÃO DE SERVIÇO</Text>
+                        <Text style={css.titulo}>{titulo}</Text>
                     </View>
                     <View style={css.body}>
                         {children}

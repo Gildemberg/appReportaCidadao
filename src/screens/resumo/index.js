@@ -5,7 +5,7 @@ import Corpo from './../../components/corpoDois';
 
 export default props => {
     return(
-        <Corpo>
+        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'}>
             <View style={css.container}>
                 <Text style={css.titulo}>Resumo</Text>
 
