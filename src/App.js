@@ -9,11 +9,12 @@ import CaixaDeEntrada from './screens/caixaDeEntrada';
 import MinhaConta from './screens/minhaConta';
 import Categoria from './screens/categoria';
 import Localizacao from  './screens/localizacao'
+import Informacoes from  './screens/informacoes'
 
 function App() {
 
   return (
-    <Localizacao/>
+    <Informacoes/>
   );
 }
 
