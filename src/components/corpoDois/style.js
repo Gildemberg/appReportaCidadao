@@ -35,7 +35,7 @@ const style = StyleSheet.create({
     body:{
         flex: 3,
         backgroundColor: '#fafafa',
-        padding: 50,
+        padding: 20,
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
         justifyContent: 'center',

@@ -8,11 +8,12 @@ import Ouvidoria from './screens/ouvidoria';
 import CaixaDeEntrada from './screens/caixaDeEntrada';
 import MinhaConta from './screens/minhaConta';
 import Categoria from './screens/categoria';
+import Localizacao from  './screens/localizacao'
 
 function App() {
 
   return (
-    <Categoria/>
+    <Localizacao/>
   );
 }
 
