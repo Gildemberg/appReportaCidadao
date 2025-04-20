@@ -6,7 +6,9 @@ const style = StyleSheet.create({
     titulo:{
         fontSize: 40,
         marginBottom: 40,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        color: '#5d5d5d',
+        fontWeight: '300'
     },
     texto: {
         color: '#fff',
