@@ -14,7 +14,7 @@ export default props => {
     return (
         <View style={css.container}>
             <TouchableOpacity style={css.botao}>
-                <Image source={icons[props.texto]} style={css.icon} />
+                <Image source={icons[props.texto]} style={css.icon} resizeMode="contain"/>
                 <Text style={css.texto}>{props.texto}</Text>
             </TouchableOpacity>
         </View>

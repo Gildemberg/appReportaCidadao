@@ -15,13 +15,14 @@ const style = StyleSheet.create({
         height: 75
     },
     icon: {
-        height: 55,
+        height:55,
         flex: 1,
         margin: 20,
     },
     texto: {
         fontSize: 20,
         flex: 4,
+        color: '#5d5d5d'
     }
 })
 export default style;
