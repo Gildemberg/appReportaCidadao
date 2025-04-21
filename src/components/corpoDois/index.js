@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, ScrollView, KeyboardAvoidingView } from "react-native";
+import { View, Text, Image, ScrollView, KeyboardAvoidingView, TouchableOpacity } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
@@ -17,7 +17,9 @@ export default ({ children, titulo })  => {
                                     style={css.container}
                                     >
                     <View style={css.head}>
-                    <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
+                        <TouchableOpacity style={css.btnVoltar}>
+                            <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
+                        </TouchableOpacity>
                         <Image source={require('./../../assets/img/logo_prefeitura.png')} style={css.logo}/>   
                         <Text style={css.titulo}>{titulo}</Text>
                     </View>

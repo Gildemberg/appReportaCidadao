@@ -16,11 +16,13 @@ const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    btnVoltar:{
+        position: "absolute",
+        left: 15
+    },
     voltar: {
         width: 20,
         height: 20,
-        position: "absolute",
-        left: 15
     },
     logo: {
         width: 70,
