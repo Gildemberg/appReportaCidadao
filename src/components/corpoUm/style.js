@@ -16,8 +16,8 @@ const style = StyleSheet.create({
         justifyContent: 'center'
     },
     foto: {
-        width: 150,
-        height: 150,
+        width: 100,
+        height: 100,
         borderRadius: 100
     },
     nome: {
@@ -35,7 +35,6 @@ const style = StyleSheet.create({
         padding: 20,
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
-        justifyContent: 'center',
     }
 })
 export default style;

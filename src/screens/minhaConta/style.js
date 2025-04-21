@@ -2,16 +2,13 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
     titulo:{
-        flex:1,
         fontSize: 40,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginVertical:20
     },
     body:{
-        flex: 5,
         justifyContent: 'center',
-    },
-    label: {
-        marginLeft: 10
+        padding:10
     },
     input: {
         alignSelf: 'stretch',
@@ -20,10 +17,17 @@ const style = StyleSheet.create({
         textAlign: 'left',
         marginBottom: 20,
         marginTop: -5,
-        paddingBottom:-5
+        paddingBottom:-5,
+        color: '#000',
     },
-    bottom: {
-        flex:2,
+    btnSair:{
+        borderRadius:8,
+        backgroundColor: '#0C828E',
+        padding:8,
+    },
+    txtBtnSair:{
+        color: '#fff',
+        textAlign: 'center'
     }
 })
 export default style;

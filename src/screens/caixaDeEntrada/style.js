@@ -3,11 +3,11 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     titulo:{
         fontSize: 40,
-        flex: 1,
-        alignSelf: 'center'
+        alignSelf: 'center',
+        marginVertical:20
     },
     body:{
-        flex: 5
+        flex: 1
     },
     scroll: {
         flex: 1, 
