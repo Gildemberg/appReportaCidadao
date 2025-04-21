@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View, TouchableOpacity, Image } from "react-native";
 import css from './style';
 
-export default props => {
+export default function CardCategoria({ navigation, texto }) {
     const icons = {
         'LIMPEZA URBANA': require('./../../assets/icons/Categorias/limpeza-urbana.png'),
         'PAVIMENTAÇÃO': require('./../../assets/icons/Categorias/pavimentacao.png'),
@@ -13,9 +13,9 @@ export default props => {
     };
     return (
         <View style={css.container}>
-            <TouchableOpacity style={css.botao}>
-                <Image source={icons[props.texto]} style={css.icon} resizeMode="contain"/>
-                <Text style={css.texto}>{props.texto}</Text>
+            <TouchableOpacity style={css.botao} onPress={()=>navigation.navigate('Informacoes')}>
+                <Image source={icons[texto]} style={css.icon} resizeMode="contain"/>
+                <Text style={css.texto}>{texto}</Text>
             </TouchableOpacity>
         </View>
     )

@@ -3,7 +3,7 @@ import { View, Text, Image, TextInput, TouchableOpacity, Pressable, KeyboardAvoi
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
-export default props => {
+export default function Login({ navigation }) {
     return (
             <LinearGradient colors={['rgba(0, 81, 203, 0.84)', 'rgba(1, 160, 80, 0.7)','#rgba(1, 117, 146, 0.91)']}
                             start={{ x: 0, y: 0 }} 
@@ -30,7 +30,7 @@ export default props => {
                                 <Text style={css.label}>Senha</Text>
                                 <TextInput style={css.input} placeholder="Insira sua senha"></TextInput>
                             </View>
-                            <Pressable  style={({ pressed }) => [{ opacity: pressed ? 0.8 : 1 }, css.bottomCard]}>
+                            <Pressable onPress={()=>navigation.navigate('Tabs')} style={({ pressed }) => [{ opacity: pressed ? 0.8 : 1 }, css.bottomCard]}>
                                 <LinearGradient colors={['rgba(0, 81, 203, 0.84)', 'rgba(1, 160, 80, 0.7)','#rgba(1, 117, 146, 0.91)']}
                                         start={{ x: 0, y: 0 }} 
                                         end={{ x: 1, y: 1 }}
@@ -42,7 +42,9 @@ export default props => {
                         </View>
                         <View style={css.bottom}>
                             <Text style={css.labelBtnCadastrar}>Ainda não possui conta?  </Text>
-                            <TouchableOpacity style={css.btnCadastrar}><Text style={css.txtBtnCadastrar}>Castre-se aqui.</Text></TouchableOpacity>
+                            <TouchableOpacity style={css.btnCadastrar} onPress={()=>navigation.navigate('CadastrarConta')}>
+                                <Text style={css.txtBtnCadastrar}>Castre-se aqui.</Text>
+                            </TouchableOpacity>
                         </View>
                     </ScrollView>
                 </KeyboardAvoidingView>

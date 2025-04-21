@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
 import css from './style'
 
-export default props => {
+export default function Boasvindas({ navigation }) {
     return (
         <View style={css.container}>
             <View style={css.head}>
@@ -30,7 +30,7 @@ export default props => {
                     </Text>
                 </View>
                 <View style={css.bottomCard}> 
-                    <TouchableOpacity style={css.btn}>
+                    <TouchableOpacity style={css.btn} onPress={()=>navigation.navigate('Login')}>
                         <Text style={css.txtBtn}>AVANÇAR</Text>
                     </TouchableOpacity>
                 </View>

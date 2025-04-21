@@ -38,7 +38,8 @@ const style = StyleSheet.create({
     },
     titulo: {
         fontSize: 40,
-        fontWeight: '300'
+        fontWeight: '300',
+        textAlign: 'center'
     },
     botoesBody:{
         flex: 9,

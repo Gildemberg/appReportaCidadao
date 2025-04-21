@@ -3,9 +3,9 @@ import { Text, TouchableOpacity, View, Image } from 'react-native';
 import css from './style';
 import Corpo from './../../components/corpoDois';
 
-export default props => {
+export default function Resumo({ navigation }) {
     return(
-        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'}>
+        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'} navigation={ navigation }>
             <View style={css.container}>
                 <Text style={css.titulo}>Resumo</Text>
 
@@ -20,9 +20,10 @@ export default props => {
                     <Text style={css.detalhes}>• Av. Apolônio Salles, Centro</Text>
                     <Text style={css.detalhes}>• Próximo a Praça das Mangueiras</Text>
                 </View>
-
                 
-                <TouchableOpacity style={css.btnProximo}><Text style={css.txtBtnProximo}>CONFIRMAR</Text></TouchableOpacity>
+                <TouchableOpacity style={css.btnProximo} onPress={()=>navigation.popTo('Tabs')}>
+                    <Text style={css.txtBtnProximo}>CONFIRMAR</Text>
+                </TouchableOpacity>
                 
             </View>
         </Corpo>

@@ -5,9 +5,9 @@ import Corpo from './../../components/corpoDois';
 import MsgUsuario from './../../components/msgUsuario'
 import MsgGestor from './../../components/msgGestor'
 
-export default props => {
+export default function Historico({ navigation, texto, detalhe1, detalhe2, detalhe3, detalhe4 }) {
     return (
-        <Corpo titulo={'MINHAS SOLICITAÇÕES'}>
+        <Corpo titulo={'MINHAS SOLICITAÇÕES'} navigation={ navigation }>
             <Text style={css.titulo}>Histórico</Text>
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>

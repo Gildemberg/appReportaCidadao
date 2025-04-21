@@ -3,7 +3,7 @@ import { View, Text, Image, ScrollView, KeyboardAvoidingView, TouchableOpacity }
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
-export default ({ children, titulo })  => {
+export default ({ children, titulo, navigation })  => {
     return (
         <KeyboardAvoidingView
             style={css.containerTeclado}
@@ -17,7 +17,7 @@ export default ({ children, titulo })  => {
                                     style={css.container}
                                     >
                     <View style={css.head}>
-                        <TouchableOpacity style={css.btnVoltar}>
+                        <TouchableOpacity style={css.btnVoltar}  onPress={()=>navigation.goBack()}>
                             <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
                         </TouchableOpacity>
                         <Image source={require('./../../assets/img/logo_prefeitura.png')} style={css.logo}/>   

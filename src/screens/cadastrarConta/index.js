@@ -3,7 +3,7 @@ import { View, Text, Image, TextInput, TouchableOpacity, Pressable, ScrollView, 
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
-export default props => {
+export default function CadastrarConta({ navigation }) {
     return (
         <ScrollView style={css.scroll} 
                     contentContainerStyle={css.scrollContent} 
@@ -53,7 +53,9 @@ export default props => {
                     </View>
                     <View style={css.bottom}>
                         <Text style={css.labelBtnEntrar}>Já possui conta?  </Text>
-                        <TouchableOpacity style={css.btnEntrar}><Text style={css.txtBtnEntrar}>Realize login aqui.</Text></TouchableOpacity>
+                        <TouchableOpacity style={css.btnEntrar} onPress={()=>navigation.goBack()}>
+                            <Text style={css.txtBtnEntrar}>Realize login aqui.</Text>
+                        </TouchableOpacity>
                     </View>
             {/* </KeyboardAvoidingView>*/}
         </LinearGradient>

@@ -5,7 +5,7 @@ import css from './style';
 import CorpoUm from './../../components/corpoUm';
 import CardNotificacao from './../../components/cardNotificacao';
 
-export default props => {
+export default function CaixaDeEntrada({ navigate }) {
     return (
         <CorpoUm>
             <Text style={css.titulo}>Notificações</Text>

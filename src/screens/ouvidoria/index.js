@@ -4,7 +4,7 @@ import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 import CorpoUm from './../../components/corpoUm';
 
-export default props => {
+export default function Ouvidoria({ navigate }) {
     return (
         <CorpoUm>
             <Text style={css.titulo}>Ouvidoria</Text>

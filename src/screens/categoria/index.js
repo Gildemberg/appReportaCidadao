@@ -4,18 +4,18 @@ import css from './style';
 import Corpo from './../../components/corpoDois';
 import Card from './../../components/cardCategoria'
 
-export default props => {
+export default function Categoria({ navigation }) {
     return (
-        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'}>
+        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'} navigation={ navigation }>
             <Text style={css.titulo}>Categoria</Text>
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>
-                <Card texto={'LIMPEZA URBANA'}/>   
-                <Card texto={'PAVIMENTAÇÃO'}/>   
-                <Card texto={'ILUMINAÇÃO PÚBLICA'}/>   
-                <Card texto={'OBRAS'}/>   
-                <Card texto={'ACESSIBILIDADE'}/>   
-                <Card texto={'ARBORIZAÇÃO'}/>         
+                <Card texto={'LIMPEZA URBANA'} navigation={ navigation }/>   
+                <Card texto={'PAVIMENTAÇÃO'} navigation={ navigation }/>   
+                <Card texto={'ILUMINAÇÃO PÚBLICA'} navigation={ navigation }/>   
+                <Card texto={'OBRAS'} navigation={ navigation }/>   
+                <Card texto={'ACESSIBILIDADE'} navigation={ navigation }/>   
+                <Card texto={'ARBORIZAÇÃO'} navigation={ navigation }/>         
             </ScrollView>
         </Corpo>
     )

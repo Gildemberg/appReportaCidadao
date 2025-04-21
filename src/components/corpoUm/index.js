@@ -25,7 +25,6 @@ export default ({ children }) => {
                     <View style={css.body}>
                         {children}
                     </View>
-                    <Navbar/>
                 </LinearGradient>
             </ScrollView>
         </KeyboardAvoidingView>

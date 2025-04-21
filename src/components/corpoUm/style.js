@@ -32,7 +32,7 @@ const style = StyleSheet.create({
     body:{
         flex: 2,
         backgroundColor: '#fafafa',
-        padding: 50,
+        padding: 20,
         borderTopLeftRadius: 40,
         borderTopRightRadius: 40,
         justifyContent: 'center',

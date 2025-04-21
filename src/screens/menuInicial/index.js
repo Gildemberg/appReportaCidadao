@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native";
 import css from './style';
 import CorpoUm from './../../components/corpoUm';
 
-export default props => {
+export default function MenuInicial({ navigation }) {
     return (
             <CorpoUm>
                 <View style={css.tituloBody}>
@@ -11,7 +11,7 @@ export default props => {
                 </View>
                 <View style={css.botoesBody}>
                     <View style={css.botaoBody}>
-                        <TouchableOpacity style={css.btn}>
+                        <TouchableOpacity style={css.btn} onPress={()=>navigation.navigate('Categoria')}>
                             <View style={css.boxIcon}>
                                 <Image source={require('./../../assets/icons/adicionar.png')} style={css.icon} />   
                             </View>
@@ -20,7 +20,7 @@ export default props => {
                     </View>
 
                     <View style={css.botaoBody}>
-                        <TouchableOpacity style={css.btn}>
+                        <TouchableOpacity style={css.btn} onPress={()=>navigation.navigate('MinhasSolicitacoes')}>
                             <View style={css.boxIcon}>
                                 <Image source={require('./../../assets/icons/pesquisar.png')} style={css.icon} />   
                             </View>
