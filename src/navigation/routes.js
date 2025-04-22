@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 
 import LinearGradient from "react-native-linear-gradient";
+import ButtonHome from './../components/buttonHome';
 
 import Boasvindas from './../screens/boasVindas';
 import Login from './../screens/login';
@@ -97,9 +98,7 @@ function Tabs() {
                         component={MenuInicial}
                         options={{
                             tabBarIcon: ({focused}) => (
-                                <Image source={ focused ? require('./../assets/icons/home-select.png') : require('./../assets/icons/home.png')} 
-                                        style={{width: 24,height: 24,}}
-                                 />
+                                <ButtonHome focused={focused}/>
                               ),
                           }}
             />
