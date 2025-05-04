@@ -1,8 +1,6 @@
 import React from "react";
-import { View, Text, Image, ScrollView, KeyboardAvoidingView } from "react-native";
-import LinearGradient from "react-native-linear-gradient";
+import { View, Text, Image, ScrollView, KeyboardAvoidingView, ImageBackground } from "react-native";
 import css from './style';
-import Navbar from "../../components/navbar";
 
 export default ({ children }) => {
     return (
@@ -12,20 +10,20 @@ export default ({ children }) => {
             >
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>
-                <LinearGradient colors={['rgba(0, 81, 203, 0.84)', 'rgba(1, 160, 80, 0.7)','#rgba(1, 117, 146, 0.91)']}
-                                    start={{ x: 0, y: 0 }} 
-                                    end={{ x: 1, y: 1 }}
-                                    style={css.container}
-                                    >
-                    <View style={css.head}>
-                        <Image source={require('./../../assets/img/foto.jpg')} style={css.foto}/>   
-                        <Text style={css.nome}>Gildemberg</Text>
-                        <Text style={css.cpf}>091.567.201-32</Text>
-                    </View>
+                <View style={css.container}>
+                    <ImageBackground source={require('./../../assets/img/background_ponte.jpg')} style={css.backgroundImagem} resizeMode="cover">
+                        <View style={css.head}>
+                            <Image source={require('./../../assets/img/foto.jpg')} style={css.foto}/>   
+                            <View style={css.dados}>
+                                <Text style={css.nome}>Gildemberg</Text>
+                                <Text style={css.cpf}>091.567.201-32</Text>
+                            </View>
+                        </View>
+                    </ImageBackground>
                     <View style={css.body}>
                         {children}
                     </View>
-                </LinearGradient>
+                </View>
             </ScrollView>
         </KeyboardAvoidingView>
     )

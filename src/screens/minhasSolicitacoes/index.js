@@ -1,13 +1,13 @@
 import React from "react";
 import { Text, View, ScrollView } from "react-native";
 import css from './style';
-import Corpo from './../../components/corpoDois';
+import Corpo from './../../components/corpoUm';
 import Card from './../../components/cardSolicitacoes'
 
 export default function MinhasSolicitacoes({ navigation }) {
     return (
-        <Corpo titulo={'MINHAS SOLICITAÇÕES'} navigation={ navigation }>
-            <Text style={css.titulo}>Solicitações</Text>
+        <Corpo>
+            <Text style={css.titulo}>Minhas Solicitações</Text>
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>
                 <Card texto={'LIMPEZA URBANA'} protocolo={'251503'} navigation={ navigation }/>   

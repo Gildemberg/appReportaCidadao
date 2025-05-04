@@ -14,7 +14,7 @@ import Ouvidoria from './../screens/ouvidoria';
 import CaixaDeEntrada from './../screens/caixaDeEntrada';
 import MinhaConta from './../screens/minhaConta';
 import Mapa from './../screens/mapa';
-import Categoria from './../screens/categoria';
+import Servicos from '../screens/servicos';
 import Localizacao from  './../screens/localizacao'
 import Informacoes from  './../screens/informacoes'
 import Resumo from  './../screens/resumo'
@@ -38,7 +38,7 @@ export default function Routes(){
 
             <Stack.Screen name='CadastrarConta' component={CadastrarConta}/>
 
-            <Stack.Screen name='Categoria' component={Categoria}/>
+            <Stack.Screen name='Servicos' component={Servicos}/>
 
             <Stack.Screen name='Localizacao' component={Localizacao}/>
 
@@ -47,6 +47,7 @@ export default function Routes(){
             <Stack.Screen name='Resumo' component={Resumo}/>
 
             <Stack.Screen name='MinhasSolicitacoes' component={MinhasSolicitacoes}/>
+            {/* <Stack.Screen name='MinhasSolicitacoes' component={MinhasSolicitacoes}/> */}
 
             <Stack.Screen name='Historico' component={Historico}/>
 
@@ -61,17 +62,10 @@ function Tabs() {
                         screenOptions={{
                             headerShown: false,
                             tabBarStyle:{
-                                paddingTop:3
+                                paddingTop:3,
+                                backgroundColor: '#053283'
                             },
                             tabBarLabel: ()=>null,
-                            tabBarBackground: ()=>(
-                                <LinearGradient
-                                    colors={['rgb(41, 107, 212)', 'rgb(76, 188, 128)', 'rgb(25, 128, 156)' ]}
-                                    style={{ flex: 1 }}
-                                    start={{ x: 0, y: 0 }}
-                                    end={{ x: 1, y: 0 }}
-                                />
-                            ),
                         }}
         >
             <Tab.Screen name='Ouvidoria' 
@@ -84,8 +78,8 @@ function Tabs() {
                              ),
                           }}
             />
-            <Tab.Screen name='CaixaDeEntrada' 
-                        component={CaixaDeEntrada}
+            <Tab.Screen name='MinhasSolicitacoes' 
+                        component={MinhasSolicitacoes}
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={ focused ? require('./../assets/icons/inbox-select.png') : require('./../assets/icons/inbox.png')} 

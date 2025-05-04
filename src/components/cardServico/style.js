@@ -2,7 +2,6 @@ import { StyleSheet } from "react-native";
 
 const style = StyleSheet.create({
     container:{
-        flex: 1,
     },
     botao:{
         flex: 1,
@@ -12,16 +11,15 @@ const style = StyleSheet.create({
         padding: 15,
         marginBottom: 15,
         alignItems: 'center',
-        height: 75
+        height: 75,
+        justifyContent: 'space-between',
     },
     icon: {
-        height:55,
-        flex: 1,
-        margin: 20,
+        height:20,
+        width:20,
     },
     texto: {
         fontSize: 20,
-        flex: 4,
         color: '#5d5d5d'
     }
 })

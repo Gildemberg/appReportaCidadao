@@ -4,22 +4,23 @@ const style = StyleSheet.create({
     container:{
     },
     botao:{
-        flexDirection: 'row',
-        borderWidth: 1,
-        borderRadius: 15,
-        marginVertical: 15,
+        borderWidth: 0.5,
+        borderRadius: 10,
         alignItems: 'center',
+        width: '115',
+        height: '115',
+        marginVertical: 3,
+        justifyContent: 'center'
     },
     icon: {
-        height:30,
-        flex: 1,
-        margin: 20,
+        height:50,
+        margin: 10,
     },
     texto: {
-        fontSize: 15,
-        flex: 4,
-        color: '#5d5d5d',
-        fontWeight: 'bold'
+        fontSize: 12,
+        color: '#424242',
+        fontWeight: 'bold',
+        textAlign: 'center'
     }
 })
 export default style;

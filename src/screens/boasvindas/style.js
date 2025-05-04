@@ -3,90 +3,63 @@ import { StyleSheet } from "react-native";
 const style = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
+        backgroundColor: 'rgba(5,50,131,0.7)',
         paddingTop: 50,
         paddingBottom: 50,
         paddingLeft: 20,
         paddingRight: 20,
     },
-    head:{
-        alignSelf: 'center',
-        flex:1,
+    backgroundImagem:{
+        flex: 1,
+        justifyContent: 'center',
     },
     logo: {
-        width: 120,
-        height: 130,
-        alignSelf: 'center'
-    },
-    titulo: {
-        color: '#000',
-        fontSize: 30,
-        fontWeight: 'bold',
-        marginBottom: -10
-    },
-    titulo2: {
-        color: '#000',
-        fontSize: 30,
-        fontWeight: 'bold'
-    },
-    titulo3: {
-        color: '#000',
-        fontSize: 13,
-        fontWeight: 'bold',
-        borderTopWidth: 1,
-        textAlign: 'center'
+        height: 100,
+        alignSelf: 'center',
+        marginVertical: 80
     },
 
     card:{
-        flex:2,
         borderRadius: 30,
         alignItems: 'center',
-        padding: 40,
+        padding: 30,
+        backgroundColor: '#fff'
     },
-    headCard: {
-        flex:1,
-        alignItems: 'center'
-    },
-    tituloCard1:{
-        color: '#fff',
-        fontWeight: 'bold',
-        fontSize: 30,
+    titulo:{
+        color: '#424242',
+        fontWeight: '500',
+        fontSize: 35,
         marginBottom: -10
     },
-    tituloCard2:{
-        color: '#fff',
-        fontSize: 30,
-    },
-    bodyCard: {
-        flex: 4, 
-        justifyContent: 'center',
+    subtitulo:{
+        color: '#424242',
+        fontSize: 35,
+        marginBottom: 30,
+        fontWeight: '300'
     },
     textoCard:{
-        color: '#fff',
+        color: '#424242',
         textAlign: 'justify',
-        fontSize: 17,
+        fontSize: 15,
+        marginBottom: 30
     },
     texto2Card:{
-        color: '#fff',
+        color: '#424242',
         textAlign: 'center',
         fontSize: 14,
-        marginTop: 30
-    },
-    bottomCard:{
-        flex:1, 
-        flexDirection: 'row',
-        alignItems: 'center'
+        marginBottom: 30
     },
     btn:{
-        backgroundColor: '#fff',
+        backgroundColor: '#053283',
         width: '100%',
-        height: 30,
-        borderRadius: 10,
+        height: 50,
+        borderRadius: 15,
         alignItems: 'center',
         justifyContent: 'center'
     },
     txtBtn: {
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: '#fff'
     }
 })
 export default style;

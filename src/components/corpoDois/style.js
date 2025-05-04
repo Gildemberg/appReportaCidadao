@@ -7,14 +7,19 @@ const style = StyleSheet.create({
     scrollContent: {
         flex: 1, 
     },
-
+    backgroundImagem:{
+        flex: 1,
+        justifyContent: 'center',
+    },
     container:{
-        flex: 1
+        flex: 1,
+        backgroundColor: 'rgba(5,50,131,0.7)',
     },
     head:{
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: 'rgba(5,50,131,0.7)',
     },
     btnVoltar:{
         position: "absolute",
@@ -27,7 +32,6 @@ const style = StyleSheet.create({
     logo: {
         width: 70,
         height: 70,
-        borderRadius: 100,
         marginBottom: 20
     },
     titulo: {
@@ -38,8 +42,8 @@ const style = StyleSheet.create({
         flex: 3,
         backgroundColor: '#fafafa',
         padding: 20,
-        borderTopLeftRadius: 40,
-        borderTopRightRadius: 40,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
         justifyContent: 'center',
     }
 })

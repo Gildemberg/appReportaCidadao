@@ -3,9 +3,9 @@ import { Text, View, TextInput, TouchableOpacity } from 'react-native';
 import css from './style';
 import Corpo from  './../../components/corpoDois';
 
-export default function Localizacao({ navigation }) {
+export default function Localizacao({ navigation, route }) {
     return (
-        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'} navigation={ navigation }>
+        <Corpo titulo={route.params.titulo} navigation={ navigation }>
             <View style={css.container}>
                 <Text style={css.titulo}>Localização</Text>
 
@@ -23,7 +23,7 @@ export default function Localizacao({ navigation }) {
                 <TextInput style={css.input} placeholder="Ex.: Próximo ao Posto Shell"/>
 
                 
-                <TouchableOpacity style={css.btnProximo} onPress={()=>navigation.navigate('Resumo')}>
+                <TouchableOpacity style={css.btnProximo} onPress={()=>navigation.navigate('Resumo', { titulo: route.params.titulo })}>
                     <Text style={css.txtBtnProximo}>PRÓXIMO</Text>
                 </TouchableOpacity>
                 

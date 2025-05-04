@@ -10,6 +10,7 @@ const style = StyleSheet.create({
         width: 60,
         height:60,
         marginBottom: 50,
+        backgroundColor: '#053283'
     }
 });
 

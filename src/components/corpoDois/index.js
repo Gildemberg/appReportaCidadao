@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, ScrollView, KeyboardAvoidingView, TouchableOpacity } from "react-native";
+import { View, Text, Image, ScrollView, KeyboardAvoidingView, TouchableOpacity, ImageBackground } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 import css from './style';
 
@@ -11,22 +11,20 @@ export default ({ children, titulo, navigation })  => {
         >
             <ScrollView contentContainerStyle={css.scrollContent} 
                         showsVerticalScrollIndicator={false}>
-                <LinearGradient colors={['rgba(0, 81, 203, 0.84)', 'rgba(1, 160, 80, 0.7)','#rgba(1, 117, 146, 0.91)']}
-                                    start={{ x: 0, y: 0 }} 
-                                    end={{ x: 1, y: 1 }}
-                                    style={css.container}
-                                    >
-                    <View style={css.head}>
-                        <TouchableOpacity style={css.btnVoltar}  onPress={()=>navigation.goBack()}>
-                            <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
-                        </TouchableOpacity>
-                        <Image source={require('./../../assets/img/logo_prefeitura.png')} style={css.logo}/>   
-                        <Text style={css.titulo}>{titulo}</Text>
-                    </View>
+                <View style={css.container}>
+                    <ImageBackground source={require('./../../assets/img/background_ponte.jpg')} style={css.backgroundImagem} resizeMode="cover">
+                        <View style={css.head}>
+                            <TouchableOpacity style={css.btnVoltar}  onPress={()=>navigation.goBack()}>
+                                <Image source={require('./../../assets/icons/seta-voltar.png')} style={css.voltar}/>   
+                            </TouchableOpacity>
+                            <Image source={require('./../../assets/img/logo_pmpa.png')} style={css.logo} resizeMode="contain"/>   
+                            <Text style={css.titulo}>{titulo}</Text>
+                        </View>
+                    </ImageBackground>
                     <View style={css.body}>
                         {children}
                     </View>
-                </LinearGradient>
+                </View>
             </ScrollView>
         </KeyboardAvoidingView>
     )

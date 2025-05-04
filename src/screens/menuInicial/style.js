@@ -7,6 +7,16 @@ const style = StyleSheet.create({
         textAlign: 'center',
         marginVertical:20
     },
+    scroll:{
+        flex: 1
+    },
+    body:{
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        flexWrap: "wrap",
+        justifyContent: 'space-between',
+    }
     
 })
 export default style;

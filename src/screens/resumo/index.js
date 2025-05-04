@@ -3,9 +3,9 @@ import { Text, TouchableOpacity, View, Image } from 'react-native';
 import css from './style';
 import Corpo from './../../components/corpoDois';
 
-export default function Resumo({ navigation }) {
+export default function Resumo({ navigation, route }) {
     return(
-        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'} navigation={ navigation }>
+        <Corpo titulo={ route.params.titulo } navigation={ navigation }>
             <View style={css.container}>
                 <Text style={css.titulo}>Resumo</Text>
 

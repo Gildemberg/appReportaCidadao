@@ -4,14 +4,14 @@ import css from './style';
 import Corpo from './../../components/corpoDois';
 import { ListaSelecao } from 'react-native-lista-selecao-suspensa'
 
-export default function Informacoes({ navigation }) {
+export default function Informacoes({ navigation, route }) {
     const dados = [
         {chave:'1', valor:'Recolher Entulho', desabilitado:true},
         {chave:'2', valor:'Limpeza da Rua'},
     ]
 
     return(
-        <Corpo titulo={'SOLICITAÇÃO DE SERVIÇO'} navigation={ navigation }>
+        <Corpo titulo={ route.params.titulo } navigation={ navigation }>
             <View style={css.container}>
                 <Text style={css.titulo}>Informações</Text>
 
@@ -43,7 +43,7 @@ export default function Informacoes({ navigation }) {
                 </View>
 
                 
-                <TouchableOpacity style={css.btnProximo} onPress={()=>navigation.navigate('Localizacao')}>
+                <TouchableOpacity style={css.btnProximo} onPress={()=>navigation.navigate('Localizacao', { titulo:route.params.titulo })}>
                     <Text style={css.txtBtnProximo}>PRÓXIMO</Text>
                 </TouchableOpacity>
                 

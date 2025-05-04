@@ -6,6 +6,11 @@ const style = StyleSheet.create({
     },
     container: {
         flex: 1,
+        backgroundColor: 'rgba(5,50,131,0.7)',
+    },
+    backgroundImagem:{
+        flex: 1,
+        justifyContent: 'center',
     },
     scroll: { 
         flexGrow: 1,
@@ -19,9 +24,11 @@ const style = StyleSheet.create({
     head:{
         justifyContent: 'center',
         alignItems: 'center',
+        marginVertical: 20
     },
     logo: {
         height: 130,
+        marginBottom: 20
     },
     titulo: {
         color: '#fff',
@@ -31,7 +38,7 @@ const style = StyleSheet.create({
 
     card: {
         backgroundColor: '#fff',
-        padding: 40,
+        padding: 30,
         borderRadius: 30,
         marginVertical: 30
     },
@@ -47,7 +54,7 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         height: 40,
         borderRadius: 10,
-        backgroundColor: '#0C828E'
+        backgroundColor: '#053283'
     },
     txtBtnCard: {
         color:'#fff',
@@ -65,6 +72,7 @@ const style = StyleSheet.create({
         fontWeight: '300'
     },
     txtBtnBototm: {
+        color: '#fff',
         fontSize: 18,
         fontWeight: 'bold'
     },

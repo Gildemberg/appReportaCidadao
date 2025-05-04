@@ -8,17 +8,25 @@ const style = StyleSheet.create({
         flex: 1, 
     },
     container:{
-        flex: 1
+        flex: 1,
+        backgroundColor: '#053283'
+    },
+    backgroundImagem:{
+        flex: 1,
+        justifyContent: 'center',
     },
     head:{
         flex: 1,
+        backgroundColor: 'rgba(5,50,131,0.7)',
+        flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'center'
+        padding: 10
     },
     foto: {
         width: 100,
         height: 100,
-        borderRadius: 100
+        borderRadius: 100, 
+        marginRight: 10
     },
     nome: {
         color: '#fff',
@@ -30,11 +38,11 @@ const style = StyleSheet.create({
         fontSize: 18
     },
     body:{
-        flex: 2,
+        flex: 3,
         backgroundColor: '#fafafa',
         paddingHorizontal: 20,
-        borderTopLeftRadius: 40,
-        borderTopRightRadius: 40,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
     }
 })
 export default style;
